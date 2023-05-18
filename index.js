@@ -76,6 +76,16 @@ ScrollReveal({
             + "<br> Email Subject: " + document.getElementById("email-sub").value
             + "<br> Message: " + document.getElementById("message").value
     }).then(
-      message => alert('Message Sent Successfully')
+        $('.sub-btn').click(function(){
+            $('.alert').removeClass('hide');
+            $('.alert').addClass('show');
+        }),
+        $('.close-btn').click(function(){
+            $('.alert').addClass('hide');
+            $('.alert').removeClass('show');
+        })
     );
  }
+
+//  Alert
+    

@@ -256,6 +256,7 @@ span {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
+    margin-bottom: 5rem !important;
 }
 
 .portfolioContainer .portfolioBox {
@@ -396,7 +397,62 @@ span {
     color: var(--second-bg-color);
 }
 
-
+.alert{
+    background-color: #68e28d;
+    padding: 1rem 2rem;
+    min-width: 35rem;
+    position: fixed;
+    left: 32rem;
+    top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    border-left: 0.7rem solid #337a65;
+    z-index: 1000;
+}
+.alert.show{
+    animation: slide_show 1s ease forwards;
+}
+@keyframes slide_show{
+    0%{
+        transform: translateX(100%);
+    }
+    40%{
+        transform: translateX(-10%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+    
+}
+.alert.hide{
+    display: none;
+}
+.alert  .fa-times, .fa-circle-check{
+    color: #1f242d !important;
+    font-size: 2rem;
+}
+.msg{
+    color: #1f242d !important;
+    font-size: 1.5rem;
+}
+.fa-times{
+    font-size: 1.5rem !important;
+    cursor: pointer;
+}
+.fa-times:hover{
+    cursor: pointer;
+    font-size: 1.6rem !important;
+}
+.check{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 /* BREAKPOINTS */
 
 @media (max-width: 1200px) {
@@ -422,15 +478,21 @@ span {
     }
 
     .services {
-        padding-bottom: 7rem;
+        padding-bottom: 15rem !important;
+        min-height: 80% !important;
+    }
+    .home{
+        min-height: 80vh;
+        padding-bottom: 5rem;
     }
 
     .about {
-        min-height: 100vh;
-        padding-bottom: 9rem;
+        min-height: 80%;
+        padding-bottom: 15rem;
     }
-
+    
     .portfolio {
+        min-height: 80%;
         padding-bottom: 7rem;
     }
 
@@ -446,6 +508,31 @@ span {
 
     .footer {
         padding: 2rem 3%;
+    }
+    .alert{
+        position: fixed;
+        padding: 1rem;
+        left: 16rem;
+        top: 1.5rem;
+        min-width: 23rem;
+    }
+}
+@media (max-width: 884px){
+    .alert{
+        position: fixed;
+        padding: 1rem;
+        left: 18rem;
+        top: 1.5rem;
+        min-width: 23rem;
+    }
+}
+@media (max-width: 834px){
+    .alert{
+        position: fixed;
+        padding: 1rem;
+        left: 16rem;
+        top: 1.5rem;
+        min-width: 23rem;
     }
 }
 
@@ -533,6 +620,11 @@ span {
         text-align: center;
         margin-top: 2rem;
     }
+    .alert{
+        position: fixed;
+        left: 28rem;
+        top: 1.5rem;
+    }
 }
 
 @media (max-width: 450px) {
@@ -543,18 +635,58 @@ span {
     .contact form .inputBox input {
         width: 100%;
     }
+    .about{
+        min-height: 80%;
+        padding-bottom: 5rem;
+    }
+    .alert{
+        position: fixed;
+        padding: 1rem;
+        left: 18rem;
+        top: 1.5rem;
+        min-width: 25rem;
+    }
 }
 
+@media (max-width: 375px) {
+    .alert{
+        position: fixed;
+        padding: 1rem;
+        left: 16rem;
+        top: 1.5rem;
+        min-width: 20rem;
+    }
+    
+    
+}
 @media (max-width: 365px) {
     .homeImg img {
         width: 250px;
         height: 250px;
     }
-
+    
     .aboutImg img {
         width: 250px;
         height: 250px;
     }
+    .alert{
+        position: fixed;
+        padding: 1rem;
+        left: 16rem;
+        top: 1.5rem;
+        min-width: 20rem;
+    }
     
-
+    
+}
+@media (max-width: 320px) {
+    .alert{
+        position: fixed;
+        padding: 1rem;
+        left: 14rem;
+        top: 1.5rem;
+        min-width: 20rem;
+    }
+    
+    
 }
