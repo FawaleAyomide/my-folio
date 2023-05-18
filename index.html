@@ -214,13 +214,13 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
 
-      <form onsubmit="sendEmail(); reset(); return false;">
+      <form action="https://formspree.io/f/xeqwdwan" method="POST" >
         <div class="inputBox">
-          <input type="text" id="name" placeholder="Full Name" />
-          <input type="text" id="email" placeholder="Email Address" />
+          <input type="text" id="name" placeholder="Full Name"  required/>
+          <input type="text" id="email" placeholder="Email Address"  required/>
         </div>
         <div class="inputBox">
-          <input type="number" id="phone-no" placeholder="Mobile Number" />
+          <input type="number" id="phone-no" placeholder="Mobile Number"  required/>
           <input type="text" id="email-sub" placeholder="Email Subject" />
         </div>
         <textarea

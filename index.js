@@ -66,7 +66,7 @@ ScrollReveal({
     Email.send({
         Host : "smtp.gmail.com",
         Username : "wollyfad@gmail.com",
-        Password : "09011430060A*",
+        Password : "",
         To : 'wollyfad@gmail.com',
         From : document.getElementById('email').value,
         Subject : "New Contact Form Enquiry",
@@ -76,6 +76,7 @@ ScrollReveal({
             + "<br> Email Subject: " + document.getElementById("email-sub").value
             + "<br> Message: " + document.getElementById("message").value
     }).then(
+      message => alert(
         $('.sub-btn').click(function(){
             $('.alert').removeClass('hide');
             $('.alert').addClass('show');
@@ -84,8 +85,19 @@ ScrollReveal({
             $('.alert').addClass('hide');
             $('.alert').removeClass('show');
         })
+      )
     );
  }
 
 //  Alert
-    
+
+    // const alertMsg = () => {
+    //     $('.sub-btn').click(function(){
+    //         $('.alert').removeClass('hide');
+    //         $('.alert').addClass('show');
+    //     });
+    //     $('.close-btn').click(function(){
+    //         $('.alert').addClass('hide');
+    //         $('.alert').removeClass('show');
+    //     });
+    // }
