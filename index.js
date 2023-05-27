@@ -53,7 +53,7 @@ ScrollReveal({
  //typedjs
 
  const typed = new Typed('.multipleText', {
-    strings: ['Web Developer','Frontend Web Developer', 'Grapghics Designer'],
+    strings: ['Web Developer','Frontend Developer', 'Graphics Designer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 100,
