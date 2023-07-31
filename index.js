@@ -103,7 +103,7 @@ ScrollReveal({
     // }
 
 function downloadPDF() {
-  const url = "path/My Resume.docx";
+  const url = "path/MyResume.pdf";
   fetch(url)
     .then((response) => response.blob())
     .then((blob) => {
