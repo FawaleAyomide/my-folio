@@ -46,6 +46,9 @@ section {
     align-items: center;
     z-index: 100;
 }
+.head {
+   margin-bottom: 3rem !important;
+}
 
 .header.sticky {
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
@@ -56,6 +59,16 @@ section {
     color: var(--text-color);
     font-weight: 600;
     cursor: default;
+}
+.logo-1 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+.logo-1:hover {
+    transition: .5s ease-in-out all;
+    font-weight: 700;
 }
 
 
@@ -160,6 +173,7 @@ span {
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -185,6 +199,10 @@ span {
 .heading {
     text-align: center;
     font-size: 4.5rem;
+}
+.project {
+    text-align: center;
+    font-size: 2.5rem;
 }
 
 .aboutContent h2 {
@@ -323,6 +341,15 @@ span {
     color: var(--second-bg-color);
 }
 
+.see-more{
+    margin: auto !important;
+    display: flex;
+    width: 18rem;
+    justify-content: center !important;
+    align-items: center;
+}
+
+/* contact section */
 .contact h2 {
     margin-bottom: 3rem;
 }
@@ -372,6 +399,10 @@ span {
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: var(--second-bg-color);
+}
+.foot{
+    background-color: var(--bg-color);
+
 }
 
 .footerText p {
@@ -495,10 +526,21 @@ span {
         min-height: 80%;
         padding-bottom: 7rem;
     }
+    .portfolio-1 {
+        min-height: 100%;
+        padding-bottom: 7rem;
+        padding-top: 17rem;
+    }
 
     .portfolioContainer {
         grid-template-columns: repeat(2, 1fr);
         padding: 1rem;
+        gap: 3rem;
+    }
+    .portfolioCont {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem 1rem;
+        margin-top: 4rem;
         gap: 3rem;
     }
 
