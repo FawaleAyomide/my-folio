@@ -101,3 +101,15 @@ ScrollReveal({
     //         $('.alert').removeClass('show');
     //     });
     // }
+
+function downloadPDF() {
+  const url = "path/My Resume.docx";
+  fetch(url)
+    .then((response) => response.blob())
+    .then((blob) => {
+      const link = document.createElement("a");
+      link.href = window.URL.createObjectURL(blob);
+      link.download = "file.pdf";
+      link.click();
+    });
+}
