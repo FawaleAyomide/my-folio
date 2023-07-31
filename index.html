@@ -5,11 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="shortcut icon"
-      href="./Images/connectdevelop.svg"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="/Images/z-codes.png" type="image/x-icon" />
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script
       src="https://kit.fontawesome.com/92ba8c81ee.js"
@@ -23,7 +19,7 @@
   <body>
     <!-- Header Section -->
     <header class="header">
-      <a href="#" class="logo">Portfolio</a>
+      <a href="#" class="logo">Zcodes</a>
 
       <i class="fa-solid fa-bars" id="menuIcon"></i>
 
@@ -64,7 +60,7 @@
             ><i class="fa-brands fa-linkedin"></i
           ></a>
         </div>
-        <a href="#" class="btn">Download CV</a>
+        <button onclick="downloadPDF()" class="btn">Download CV</button>
       </div>
       <div class="homeImg">
         <img
@@ -132,19 +128,59 @@
       <h2 class="heading">Latest <span>Project</span></h2>
       <div class="portfolioContainer">
         <div class="portfolioBox">
+          <img src="/Images/tim-kabel-FCrYdP8gohg-unsplash.jpg" alt="" />
+          <div class="portfolioLayer">
+            <h4>Zchat App</h4>
+            <p>
+              A Haven for Text-Based Content
+            </p>
+            <a href="https://zchat-c3aae.web.app/" target="_blank"><i
+                class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="portfolioBox">
+          <img src="https://images.unsplash.com/photo-1503437313881-503a91226402?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80" alt="" />
+          <div class="portfolioLayer">
+            <h4>Easy Bank Landing Page</h4>
+            <p>
+              Next generation digital banking.
+            </p>
+            <a href="https://easy-bank-landing-page-omega.vercel.app/" target="_blank"><i
+                class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="portfolioBox">
+          <img
+            src="https://images.unsplash.com/photo-1536242918817-db5e93c7a0e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+            alt="" />
+          <div class="portfolioLayer">
+            <h4>Fylo Dark Theme Landing Page</h4>
+            <p>All your files in one secure location, accessible anywhere.</p>
+            <a href="https://fylo-dark-theme-sol.netlify.app/" target="_blank"><i
+                class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="portfolioBox">
+          <img src="/Images/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg" alt="" />
+          <div class="portfolioLayer">
+            <h4>Sunny Side Agency</h4>
+            <p>QR code component challenge on Frontend Mentor</p>
+            <a href="https://sunny-side-agency-one.vercel.app/" target="_blank"><i
+                class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="portfolioBox">
           <img
             src="https://images.unsplash.com/photo-1561494653-744c43aed0c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1194&q=80"
-            alt=""
-          />
+            alt="" />
           <div class="portfolioLayer">
-            <h4>Fylo landing page</h4>
+            <h4>Fylo Landing Page</h4>
             <p>
               Fylo landing page with two column layout challenge on Frontend
               Mentor
             </p>
-            <a href="https://fylo-landing-page-8bjw.vercel.app/" target="_blank"
-              ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
+            <a href="https://fylo-landing-page-8bjw.vercel.app/" target="_blank"><i
+                class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
         </div>
         <div class="portfolioBox">
@@ -152,61 +188,12 @@
           <div class="portfolioLayer">
             <h4>Order summary card</h4>
             <p>Order summary card challenge on Frontend Mentor</p>
-            <a
-              href="https://order-summary-component-a0dpp1hpc-fawaleayomide.vercel.app/"
-              target="_blank"
-              ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-        </div>
-        <div class="portfolioBox">
-          <img src="/Images/nasa-Q1p7bh3SHj8-unsplash.jpg" alt="" />
-          <div class="portfolioLayer">
-            <h4>Github Repo Fetcher</h4>
-            <p>Github repository fetcher using Vue(.js)</p>
-            <a href="https://repository-fetch.vercel.app/" target="_blank"
-              ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-        </div>
-        <div class="portfolioBox">
-          <img src="/Images//76-Xu4hXhKCfkg-unsplash.jpg" alt="" />
-          <div class="portfolioLayer">
-            <h4>React Calculator</h4>
-            <p>Functional calculator built with React(.js)</p>
-            <a
-              href="https://replit.com/@fawaletimilehin/React-Calculator?v=1"
-              target="_blank"
-              ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-        </div>
-        <div class="portfolioBox">
-          <img src="/Images/tim-kabel-FCrYdP8gohg-unsplash.jpg" alt="" />
-          <div class="portfolioLayer">
-            <h4>Web Design</h4>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Aspernatur, suscipit.
-            </p>
-            <a href="#" target="_blank"
-              ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
-          </div>
-        </div>
-        <div class="portfolioBox">
-          <img src="/Images/ramon-salinero-vEE00Hx5d0Q-unsplash.jpg" alt="" />
-          <div class="portfolioLayer">
-            <h4>QR code component</h4>
-            <p>QR code component challenge on Frontend Mentor</p>
-            <a
-              href="https://qr-code-component-seven-rouge.vercel.app/HTML"
-              target="_blank"
-              ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i
-            ></a>
+            <a href="https://order-summary-component-a0dpp1hpc-fawaleayomide.vercel.app/" target="_blank"><i
+                class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
         </div>
       </div>
+      <a href="portfolio.html" class="btn sub-btn see-more">See More</a>
     </section>
 
     <!-- contact section -->
@@ -214,13 +201,20 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
 
-      <form action="https://formspree.io/f/xeqwdwan" method="POST" >
+      <form
+        onSubmit={sendEmail()}
+      >
         <div class="inputBox">
-          <input type="text" id="name" placeholder="Full Name"  required/>
-          <input type="text" id="email" placeholder="Email Address"  required/>
+          <input type="text" id="name" placeholder="Full Name" required />
+          <input type="text" id="email" placeholder="Email Address" required />
         </div>
         <div class="inputBox">
-          <input type="number" id="phone-no" placeholder="Mobile Number"  required/>
+          <input
+            type="number"
+            id="phone-no"
+            placeholder="Mobile Number"
+            required
+          />
           <input type="text" id="email-sub" placeholder="Email Subject" />
         </div>
         <textarea
